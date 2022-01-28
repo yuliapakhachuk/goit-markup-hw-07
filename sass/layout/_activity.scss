@@ -1,0 +1,41 @@
+.activity-block {
+  padding-bottom: 94px;
+}
+.activity-title,
+.team-block-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.activity-list {
+  display: flex;
+}
+.activity-item {
+  position: relative;
+}
+
+.activity-item:not(:last-child) {
+  margin-right: 30px;
+}
+.activity-img-dscr-tumb {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.activity-img-dscr {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color1);
+}
