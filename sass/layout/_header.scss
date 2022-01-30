@@ -2,88 +2,46 @@
   background-color: var(--background-color1);
   border: 1px solid #ececec;
 }
-.header-box {
+.header__box {
   display: flex;
   align-items: center;
 }
-.header-logo {
-  font-family: 'Raleway';
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--font-color2);
-}
-.header-logo > span {
-  color: var(--accent-color);
-}
-.header-nav {
-  margin-left: 93px;
-}
-.nav-list {
-  list-style: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  display: flex;
-}
-.nav-item:not(:last-child) {
-  margin-right: 50px;
-}
-.nav.link {
-  color: var(--font-color3);
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition-property: color;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--timing-function);
-}
-.nav.link.active {
-  position: relative;
-  color: var(--accent-color);
-}
 
-.nav.link.active::after {
-  content: '';
-  position: absolute;
-  height: 4px;
-  width: 100%;
-  border-radius: 2px;
-  left: 0;
-  bottom: 0;
-  background-color: var(--accent-color);
-}
-
-.header-contact.link {
+.header__contact {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  margin-left: auto;
+  color: var(--font-color1);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--font-color1);
-  margin-left: auto;
+
+  &:last-child {
+    margin-left: 50px;
+    margin-right: 0;
+  }
+}
+
+.contact__link {
+  font-size: 14px;
+
   transition-property: color;
   transition-duration: var(--animation-duration);
   transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.nav.link:hover,
-.nav.link:focus,
-.header-contact.link:hover,
-.header-contact.link:focus {
-  color: var(--accent-color);
-}
-.header-contact-icon {
+
+.contact__icon {
   margin-right: 10px;
   fill: currentColor;
-}
-.header-contact-icon:hover {
-  fill: currentColor;
-}
-.header-contact.link:last-child {
-  margin-left: 50px;
-  margin-right: 0;
+
+  &:hover {
+    fill: currentColor;
+  }
 }

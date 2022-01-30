@@ -1,46 +1,45 @@
-.clients-block {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--background-color1);
 }
-.clients-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: 0.03em;
+.clients__title {
   margin-bottom: 50px;
 }
-.clients-list {
+.clients__list {
   display: flex;
 }
-.clients-item {
+.clients__item {
   margin-right: var(--card-item-gap);
 }
-.clients-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 170px;
   height: 92px;
   border: 1px solid var(--logo-color);
   border-radius: 4px;
   color: var(--accent-color);
+
   transition-property: border;
   transition-duration: var(--animation-duration);
   transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid var(--accent-color);
-}
-.clients-link:hover .client-icon,
-.clients-link:focus .client-icon {
-  fill: var(--accent-color);
-}
-.client-icon {
+.client__icon {
   fill: var(--logo-color);
   transition-property: fill;
   transition-duration: var(--animation-duration);
   transition-timing-function: var(--timing-function);
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: var(--accent-color);
+  }
 }
